@@ -34,6 +34,12 @@ class UsersForm extends AdminForm
                 'multiple' => false
             ])
 
+            ->add('active', 'choice', [
+                'choices' => ['N' => "No - Deactivated", 'Y' => "Yes - Active"],
+                'multiple' => false,
+                'label' => "Account Enabled"
+            ])
+
             ->add('phone', 'text', [
                 'label' => "Phone Number"
             ])
